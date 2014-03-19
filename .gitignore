@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class xxx 
+{
+public static void main(String[] args){
+String girdi;Scanner girdi1 = new Scanner(System.in);int birinci_sayi, ikinci_sayi;
+System.out.println("İlk sayıyı giriniz:");
+birinci_sayi=girdi1.nextInt();
+System.out.println("İkinci sayıyı giriniz:");
+ikinci_sayi=girdi1.nextInt();
+ 
+int islem, sonuc;
+System.out.println("Toplama işlemi için 1'e, çıkarma işlemi için 2'ye, çarpma için 3'e ve bölme işlemi için 4'e basınız.");
+islem=girdi1.nextInt();
+ 
+if(islem==1)
+{
+  sonuc=birinci_sayi+ikinci_sayi;
+  System.out.printf("Toplama işlemini seçtiniz, sonuç=%d", sonuc);
+}
+if(islem==2)
+{
+  sonuc=birinci_sayi-ikinci_sayi;
+  System.out.printf("Çıkarma işlemini seçtiniz, sonuç=%d", sonuc);
+}
+if(islem==3)
+{
+  sonuc=birinci_sayi*ikinci_sayi;
+  System.out.printf("Çarpma işlemini seçtiniz, sonuç=%d", sonuc);
+}
+if(islem==4)
+{
+  sonuc=birinci_sayi/ikinci_sayi;
+  System.out.printf("Bölme işlemini seçtiniz, sonuç=%d", sonuc);
+}
+}
+}
